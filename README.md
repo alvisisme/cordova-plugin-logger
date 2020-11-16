@@ -18,7 +18,7 @@ Cordova日志插件。
     通过git仓库方式安装
 
     ```bash
-    dordova plugin add git+https://github.com/alvisisme/cordova-plugin-logger.git
+    cordova plugin add git+https://github.com/alvisisme/cordova-plugin-logger.git
     ```
 
     通过本地文件方式安装
