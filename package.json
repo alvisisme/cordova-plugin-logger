@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-logger",
+  "version": "0.1.0",
+  "description": "Simple Cordova plugin that write log to local file on Android platform.",
+  "scripts": {
+    "doc": "jsdoc --readme README.md www/logger.js"
+  },
+  "cordova": {
+    "id": "cordova-plugin-logger",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alvisisme/cordova-plugin-logger.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.4.0"
+    }
+  ],
+  "author": "Alvis Zhao",
+  "license": "ISC"
+}

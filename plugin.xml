@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="cordova-plugin-logger"
+        version="0.1.0">
+
+  <name>Logger</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/logger.js" target="js/logger.js"/>
+
+  <js-module src="www/logger.js" name="logger">
+    <clobbers target="cordova.plugins.logger" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Logger">
+        <param name="android-package" value="com.plugin.logger.LoggerPlugin"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/LoggerPlugin.java" target-dir="src/com/plugin/logger"/>
+  </platform>
+
+</plugin>
